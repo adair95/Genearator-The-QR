@@ -1,0 +1,9 @@
+D:\QR\QR\QR\bin\Debug\QR.exe.config
+D:\QR\QR\QR\bin\Debug\QR.exe
+D:\QR\QR\QR\bin\Debug\QR.pdb
+D:\QR\QR\QR\bin\Debug\QRCoder.dll
+D:\QR\QR\QR\obj\Debug\QR.csproj.AssemblyReference.cache
+D:\QR\QR\QR\obj\Debug\QR.csproj.CoreCompileInputs.cache
+D:\QR\QR\QR\obj\Debug\QR.csproj.CopyComplete
+D:\QR\QR\QR\obj\Debug\QR.exe
+D:\QR\QR\QR\obj\Debug\QR.pdb
