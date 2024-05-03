@@ -29,14 +29,15 @@ namespace QR
 
         private  void GetImgQrCode(QRCodeData qr)
         {
-            /*Descomentar la linea 35 y 39 si el QR lo quieres en formato jpeg y
-            comentar las lineas 36 y 37 */
-            SvgQRCode qrCode = new SvgQRCode(qr);
-            //Bitmap qrCodeImage = qrCode.GetGraphic(20); //Convierte la Data en Imagen
-            String qrCodeSvg = qrCode.GetGraphic(20);
-            String ruta = "D:/QR/QR/QR/bin/Debug/Ejemplo.svg"; //Ruta donde se va almacenar el QR
-            File.WriteAllText(ruta, qrCodeSvg);
-            //qrCodeImage.Save("Short", System.Drawing.Imaging.ImageFormat.Jpeg); //Descomentar si desea guardar la Img en jpg
+            /*Descomentar la linea 35, 37, 38 y 39 si el QR lo quieres en formato jpeg y
+            comentar las lineas 34, 36 y 40 */
+            QRCode qrCode = new QRCode(qr);
+            //SvgQRCode qrCode = new SvgQRCode(qr);
+            Bitmap qrCodeImage = qrCode.GetGraphic(20); //Convierte la Data en Imagen
+            //String qrCodeSvg = qrCode.GetGraphic(20);
+           // String ruta = "D:/QR/QR/QR/bin/Debug/Ejemplo.svg"; //Ruta donde se va almacenar el QR
+           // File.WriteAllText(ruta, qrCodeSvg);
+            qrCodeImage.Save("ArchivoEnPNG", System.Drawing.Imaging.ImageFormat.Png); //Descomentar si desea guardar la Img en jpg
         } 
     }
 
