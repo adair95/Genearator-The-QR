@@ -11,7 +11,7 @@ namespace QR
 {
     class Program
     {
-        private readonly string dato = "URL";
+        private readonly string dato = "https://ajuba.co/";
 
         static void Main(string[] args)
         {
@@ -34,7 +34,7 @@ namespace QR
             SvgQRCode qrCode = new SvgQRCode(qr);
             //Bitmap qrCodeImage = qrCode.GetGraphic(20); //Convierte la Data en Imagen
             String qrCodeSvg = qrCode.GetGraphic(20);
-            String ruta = "D:/QR1/S3R/QR/bi/Debug/NombreDelArchivo.svg";
+            String ruta = "D:/QR/QR/QR/bin/Debug/Ejemplo.svg"; //Ruta donde se va almacenar el QR
             File.WriteAllText(ruta, qrCodeSvg);
             //qrCodeImage.Save("Short", System.Drawing.Imaging.ImageFormat.Jpeg); //Descomentar si desea guardar la Img en jpg
         } 
