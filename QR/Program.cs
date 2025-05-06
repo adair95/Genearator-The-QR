@@ -11,7 +11,7 @@ namespace QR
 {
     class Program
     {
-        private readonly string dato = "https://ajuba.co/";
+        private readonly string dato = "https://rtvcplay.co/buscar/cuatro%20reinos";
 
         static void Main(string[] args)
         {
@@ -37,7 +37,7 @@ namespace QR
             //String qrCodeSvg = qrCode.GetGraphic(20);
            // String ruta = "D:/QR/QR/QR/bin/Debug/Ejemplo.svg"; //Ruta donde se va almacenar el QR
            // File.WriteAllText(ruta, qrCodeSvg);
-            qrCodeImage.Save("ArchivoEnPNG", System.Drawing.Imaging.ImageFormat.Png); //Descomentar si desea guardar la Img en jpg
+            qrCodeImage.Save("CuatroReino", System.Drawing.Imaging.ImageFormat.Png); //Descomentar si desea guardar la Img en jpg
         } 
     }
 
